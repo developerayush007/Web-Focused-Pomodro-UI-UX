@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+   
+body
+{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url("https://darksoul-codepen.github.io/DarkSoul.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Belanosima', sans-serif;
+    color: #564d93;
+}
+.darksoul-layout-left
+{
+    margin: auto;
+    margin-right: 1px;
+    width: 70%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 2px #ffffff, -300px -200px 1000px #978ce4, -200px -200px 1000px #ffffff, -0.5px -0.5px 2px #ffffff;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.darksoul-sidenav
+{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(100px);
+}
+.darksoul-content
+{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+.content-top
+{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+}
+.card
+{
+    width: 23%;
+    height: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.395);
+    border-radius: 0px 25px 0px;
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.card h4
+{
+    margin: auto;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.card p
+{
+    margin: auto;
+    font-size: 70px;
+   margin-top: 1px;
+   font-family: 'Rubik Vinyl', sans-serif;
+
+}
+.card h6
+{
+    margin: auto;
+    font-size: 40px;
+  
+   margin-top: 1px;
+   margin-left: 10px;
+
+}
+.content-middle
+{
+    margin: auto;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.347);
+    border-radius: 0px 25px 0px;
+    flex-direction: column;
+    z-index: 500;
+}
+.content-middle h4
+{
+    margin: auto;
+    height: fit-content;
+    width: 90%;
+    margin-bottom: 1px;
+}
+.content-middle h4 span
+{
+    
+    font-size: 12px;
+    width: fit-content;
+    background-color: #ffffffa5;
+    border-radius: 50%;
+    padding: 4px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.message-box
+{
+    margin: auto;
+    height: 70%;
+    width: 90%;
+    overflow-y: scroll;
+    margin-top: 1px;
+    background-color: transparent;
+
+
+}
+.message-box p
+{
+    width: 95%;
+    text-align: left;
+    background-color: #ffffff18;
+    border-radius: 0px 15px 0px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    backdrop-filter: blur(50px);
+    display: flex;
+}
+.message-box p:hover
+{
+    cursor: pointer;
+    background-color: #9585ff31;
+   
+    backdrop-filter: blur(0px);
+}
+.message-box p img
+{
+    margin: auto;
+    height: fit-content;
+    margin-right: 5px;
+    padding: 2px;
+}
+.message-box p img:hover
+{
+    background-color: #ffffffa5;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.content-bottom
+{
+    margin: auto;
+    width: 90%;
+    height: 20%; 
+ 
+    display: flex;
+}
+.time-spent
+{
+    margin: auto;
+    width: 30%;
+    height: 90%; 
+    background-color: rgba(255, 255, 255, 0.547);
+    backdrop-filter: blur(1000px);
+    display: flex;
+    border-radius: 0px 25px 0px;
+    box-shadow: 0.5px 0.5px 2px #ffffff,5px 5px 200px #8677e2,5px 5px 200px #a7a0ce, -0.5px -0.5px 2px #ffffff;
+}
+.time-spent div
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.time-spent div h4
+{
+    margin: auto;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+.time-spent div p 
+{
+    margin: auto;
+    font-size: 50px;
+    margin-top: 1px;
+}
+.time-spent img
+{
+    margin: auto;
+    margin-left: 1px;
+}
+.activity
+{
+    margin: auto;
+    width: 30%;
+    height: 90%; 
+    background-color: rgba(255, 255, 255, 0.547);
+    backdrop-filter: blur(1000px);
+    display: flex;
+    border-radius: 0px 25px 0px;
+    box-shadow: 0.5px 0.5px 2px #ffffff,5px 5px 200px #8677e2,5px 5px 200px #887fbb, -0.5px -0.5px 2px #ffffff;
+}
+.activity div
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.activity div h4
+{
+    margin: auto;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+.activity div p 
+{
+    margin: auto;
+    font-size: 50px;
+    margin-top: 1px;
+}
+.activity div p span
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+}
+.activity img
+{
+    margin: auto;
+    margin-left: 1px;
+}
+.top
+{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.347);
+    border-top-right-radius: 25px;
+}
+.middle
+{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0);
+   
+    display: flex;
+    flex-direction: column;
+}
+.bottom
+{
+    width: 100%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.347);
+    border-bottom-left-radius: 25px;
+}
+.darksoul-tab-1, .darksoul-tab-2, .darksoul-tab-3, .darksoul-tab-4, .darksoul-tab-5
+{
+    width: 98%;
+    height: 50px;
+    display: flex;
+    padding-left: 2%;
+    background-color: rgba(255, 255, 255, 0.347);
+    cursor: pointer;
+    
+}
+.darksoul-tab-1
+{
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: blur(0px);
+   border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+   
+}
+.darksoul-tab-1:hover,   .darksoul-tab-2:hover, .darksoul-tab-3:hover, .darksoul-tab-4:hover, .darksoul-tab-5:hover
+{
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: blur(0px);
+   border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    cursor: pointer;
+}
+.darksoul-tab-1 img, .darksoul-tab-2 img, .darksoul-tab-3 img, .darksoul-tab-4 img, .darksoul-tab-5 img
+{
+    width: fit-content;
+    margin: auto;
+}
+.darksoul-tab-1 p, .darksoul-tab-2 p, .darksoul-tab-3 p, .darksoul-tab-4 p, .darksoul-tab-5 p
+{
+    width: 80%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Belanosima', sans-serif;
+}
+.darksoul-layout-right
+{
+    margin: auto;
+    width: 22%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-music
+{
+    margin: auto;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.379);
+    box-shadow: 0.5px 0.5px 2px rgb(255, 255, 255), -0.5px -0.5px 2px rgb(255, 255, 255);
+    border-radius: 0px 20px 0px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+.darksoul-notifications
+{
+    margin: auto;
+    margin-top: 2.5%;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.444);
+    box-shadow: 0.5px 0.5px 2px #ffffff,50px 50px 200px #8677e2,50px 50px 200px #3c3565, -0.5px -0.5px 2px #ffffff;
+    border-radius: 0px 10px 0px;
+    backdrop-filter: blur(5px);
+    display: flex;
+}
+.datetime
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.datetime h4
+{
+    margin: auto;
+    margin-bottom: 1px;
+    margin-left: 20px;
+}
+.datetime p
+{
+    margin: auto;
+    font-size: 60px;
+    margin-top: 1px;
+}
+.weather
+{
+    margin: auto;
+    margin-right: 0px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 0.5px 0.5px 2px #ffffff, -0.5px -0.5px 2px #ffffff;
+    border-radius: 500px 0px 0px 0px;
+    backdrop-filter: blur(100px);
+    background-color: #8577e28a;
+}
+.noti-icons
+{
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+}
+.noti-icons img
+{
+    margin: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.noti-icons img:hover
+{
+    background-color: #7d70d5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.combine
+{
+    height: 80%;
+    margin: auto;
+    display: flex;
+    width: 70%;
+}
+
+.combine h4
+{
+    margin-top: 1px;
+    margin: auto;
+    color: white;
+}
+.combine img
+{
+    margin-top: 1px;
+    margin: auto;
+}
+
+.music-mediaplayer
+{
+    height: 40%;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+   
+    display: flex;
+    flex-direction: column;
+}
+.music-mediaplayer h4
+{
+    margin: auto;
+    font-size: 40px;
+}
+.music-mediaplayer input
+{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+input[type='range'] 
+{
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 80%;
+
+    outline: none;
+    border-radius: 15px;
+    height: 6px;
+    background: #564d931d;
+}
+
+
+
+input[type='range']::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+  
+    appearance: none; 
+    height: 15px;
+    width: 15px;
+    background-color: #564d93;
+    border-radius: 50%;
+    border: none;
+    
+    animation-name: slider;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider 
+{
+    0%
+    {
+        transform: translateX(0px);
+    } 
+    100%
+    {
+        transform: translateX(50px);
+    }
+}
+.media-player-icons
+{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+.music-banner
+{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+  
+}
+.music-banner video
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 20px 0px;
+    box-shadow: 0.5px 0.5px 2px #ffffff,5px 5px 200px #8677e2,5px 5px 200px #3c3565, -0.5px -0.5px 2px #ffffff;
+}
+.darksoul-playicon
+{
+    display: none;
+    margin: auto;
+    margin-bottom: 1px;
+    padding: 5px;
+}
+
+.darksoul-pauseicon
+{
+    display: flex;
+    margin: auto;
+    margin-bottom: 1px;
+    padding: 5px;
+}
+.darksoul-pauseicon:hover, .darksoul-playicon:hover, .backward:hover, .forward:hover
+{
+    background-color: rgba(198, 190, 255, 0.696);
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(1000px);
+}
+.backward
+{
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+.forward
+{
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+
+
+/* width */
+::-webkit-scrollbar 
+{
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+    background-color: rgba(226, 247, 255, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+background: #978fd7;
+border-radius: 10px;
+height: 10px;
+width: 3px;
+}
+
+.disclaimer
+{
+    position: absolute;
+    bottom: 0px; 
+    left: 0; 
+    margin-left: auto; 
+    right: 0; 
+    margin-right: auto; 
+    width: fit-content;
+    color: white;
+}
+.disclaimer a
+{
+    text-decoration: none;
+    color: #584f95;
+}
+.disclaimer a:hover
+{
+    font-weight: bolder;
+}
+::selection
+{
+    background-color: #453b7b;
+    color: white;
+}
